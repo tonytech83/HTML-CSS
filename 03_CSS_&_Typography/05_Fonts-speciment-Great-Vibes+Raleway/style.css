@@ -1,0 +1,16 @@
+body {
+    padding: 40px;
+}
+
+h1 {
+    font-family: 'Great Vibes', sans-serif;
+    line-height: 1.2;
+    font-weight: bold;
+    
+}
+
+article {
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
