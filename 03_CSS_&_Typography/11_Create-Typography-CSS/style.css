@@ -1,15 +1,16 @@
 html {
     font-family: Helvetica, sans-serif;
-}
-
-body {
-    
     font-size: 16px;
     line-height: 1.5;
     padding: 30px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: Georgia, serif;
 }
 
@@ -22,10 +23,11 @@ blockquote {
 table {
     text-align: left;
     width: 100%;
-    border-spacing: 0;
+    border-collapse: collapse;
+    table-layout: fixed;
 }
 
-td {
+td, th {
     border: 1px solid gray;
     padding-left: 3px;
 
