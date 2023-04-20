@@ -10,17 +10,19 @@ ul {
     list-style: none;
 }
 
+ul i {
+    font-size: 25px;
+}
+
 ul.check i {
     color: #2fcc71;
-    font-size: 25px;
 }
 
 ul.star i {
     color: coral;
-    font-size: 25px;
 }
 
 ul.contact i {
     color: #3498da;
-    font-size: 25px;
+
 }
