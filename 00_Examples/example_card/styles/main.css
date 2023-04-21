@@ -16,7 +16,6 @@ h1 {
 /* Card component */
 .card {
     width: 340px;
-    /* border: 1px solid #000; */
     border-radius: 8px;
     overflow: hidden;
     background: #fff;
