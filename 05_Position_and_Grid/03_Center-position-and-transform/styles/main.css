@@ -1,28 +1,25 @@
 body {
+  position: relative;
   background: rgb(238, 238, 238);
 }
 
 .card {
-  display: inline-block;
-  position: relative;
+  position: absolute;
   background: rgb(255, 255, 255);
-  margin-top: 100px;
-  margin-left: 100px;
-  width: 400px;
-}
-
-.card__img {
-  position: relative;
-}
-
-.card__content {
-  padding: 18px;
+  top: 50%;
+  left: 50%;
+  width: 440px;
+  transform: translate(-50%, -50%);
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 
+.card__content {
+
+  padding: 32px;
+}
+
 img {
-  /* position: absolute; */
   border-top-right-radius: 6px;
   border-top-left-radius: 6px;
 }
@@ -35,12 +32,14 @@ h3 {
 
 p {
   font-family: Arial, sans-serif;
-  margin-bottom: 16px;
+  margin-bottom: 64px;
 }
 
 a {
+  position: fixed;
+  bottom: 6.5%;
+  left: 71.5%;
   font-family: Arial, sans-serif;
-
   text-decoration: none;
   background: rgb(0, 153, 0);
   text-align: right;
