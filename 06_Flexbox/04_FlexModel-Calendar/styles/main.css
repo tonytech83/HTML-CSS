@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 32px;
+  display: flex;
+  max-width: 65vw;
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  align-items: center;
+}
+
+span {
+  border: 1px solid black;
+  padding: 8px;
+  font-size: 10px;
+}
+
+.week {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 54vw;
+}
+
+.week span {
+  height: 67px;
+  padding: 12px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.week > span:nth-child(1) {
+  font-size: 12px;
+  width: 54vw;
+}
+
+.week > span:nth-child(7) {
+  font-size: 12px;
+  width: 54vw;
+}
+
+.notes {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.notes span {
+  width: 11vw;
+  height: 134px;
+}
