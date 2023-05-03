@@ -7,48 +7,45 @@
   display: flex;
   max-width: 65vw;
   font-family: Arial, Helvetica, sans-serif;
-  border: 1px solid black;
-  align-items: center;
+  text-align: center;
 }
 
-span {
-  border: 1px solid black;
-  padding: 8px;
-  font-size: 10px;
-}
-
-.week {
+.container section {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  max-width: 54vw;
 }
 
-.week span {
-  height: 67px;
+.container .item {
+  border: 1px solid black;
   padding: 12px;
-  text-align: center;
-  flex-grow: 1;
+  display: block;
 }
 
-.week > span:nth-child(1) {
-  font-size: 12px;
-  width: 54vw;
+.container .week {
+  width: 75%;
+  flex-wrap: wrap;
 }
 
-.week > span:nth-child(7) {
-  font-size: 12px;
-  width: 54vw;
+.container .week .item {
+  width: 20%;
 }
 
-.notes {
-  display: flex;
-  align-items: center;
-  text-align: center;
+.container .week .item:nth-child(1),
+.container .week .item:nth-child(7) {
+  width: 100%;
+}
+
+.container .week .item:nth-child(8),
+.container .week .item:nth-child(9) {
+  width: 50%;
+}
+
+.container .notes {
+  width: 25%;
   flex-direction: column;
 }
 
-.notes span {
-  width: 11vw;
-  height: 134px;
+.container .notes .item {
+  /* width: 100%; */
+  flex: 1 1 50%;
 }
