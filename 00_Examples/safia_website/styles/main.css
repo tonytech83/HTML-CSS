@@ -1,0 +1,152 @@
+/* 
+bg - #070e27
+bg-light - #162044
+primary - #0059f7
+gray (text) - #7e8bb6 
+*/
+
+/* MAIN header with navigation */
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #070e27;
+  color: #fff;
+}
+
+p {
+  color: #7e8bb6;
+}
+
+.btn {
+  all: unset;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 16px 64px;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  background: #070e27;
+}
+
+.header .navigation {
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+.header .nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.header .nav-list a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.header .btn {
+  background: #162044;
+  color: #fff;
+}
+
+/* HERO section */
+
+#hero {
+  padding: 64px;
+}
+
+#hero .welcome {
+  max-width: 900px;
+  margin: 0 auto 48px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#hero .hero-img {
+  margin: 0 auto 48px auto;
+}
+
+#hero .welcome > * {
+  width: 45%;
+}
+
+#hero .welcome .title {
+  font-size: 42px;
+  line-height: 1.2;
+}
+
+#hero .welcome .info {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+#hero .welcome .btn {
+  background: #0059f7;
+}
+
+#hero .partners {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+/* HOW section */
+
+#how {
+  padding: 64px;
+}
+
+#how .how-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#how .how-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+#how .row {
+  display: flex;
+  align-items: center;
+  gap: 10%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+#how .row:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#how .row:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+#how .row .row-img {
+  width: 55%;
+}
+
+#how .row .row-content {
+  width: 35%;
+}
+
+#how .row .row-content .row-titile {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
