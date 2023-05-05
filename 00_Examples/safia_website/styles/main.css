@@ -5,6 +5,8 @@ primary - #0059f7
 gray (text) - #7e8bb6 
 */
 
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
+
 /* MAIN header with navigation */
 
 html {
@@ -63,6 +65,7 @@ p {
 
 #hero {
   padding: 64px;
+  border-bottom: 2px solid #0c1430;
 }
 
 #hero .welcome {
@@ -149,4 +152,79 @@ p {
 #how .row .row-content .row-titile {
   font-size: 24px;
   margin-bottom: 8px;
+}
+
+/* ------------------
+  FEATURES section
+------------------*/
+#features {
+  padding: 64px;
+  width: 900px;
+  margin: auto;
+}
+
+#features .feat-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#features .feat-subtitle {
+  font-size: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+
+#features .box-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+#features .box {
+  border: 2px solid #0c1430;
+  padding: 32px;
+  border-radius: 18px;
+}
+
+#features .box:hover {
+  background: #081131;
+  cursor: pointer;
+}
+
+#features .box i {
+  font-size: 32px;
+  color: #7e8bb6;
+  margin-bottom: 24px;
+}
+
+#features .box .box-title {
+  margin-bottom: 12px;
+}
+
+#features .box p {
+  color: #fff;
+  font-size: 14px;
+}
+
+#features .start {
+  display: block;
+  width: 770px;
+  padding: 64px;
+  margin: auto;
+  border: 2px solid #0c1430;
+  border-radius: 32px;
+  text-align: center;
+  background: #0059f7;
+}
+
+#features .start .start-title {
+  padding: 12px 0 18px 0;
+  font-size: 24px;
+}
+
+#features .start .btn {
+  background: #689eff;
+  font-size: 12px;
+  padding: 12px;
 }
