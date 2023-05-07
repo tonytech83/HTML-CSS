@@ -233,7 +233,7 @@ p {
       PRICING section
 ----------------------------*/
 
-#pricing {
+/* #pricing {
   padding: 64px;
 }
 
@@ -313,4 +313,165 @@ p {
   padding: 12px;
   border-radius: 8px;
   font-size: 12px;
+} */
+
+/* ------------------------------
+        RESPONSIVE
+---------------------------------*/
+
+@media screen and (max-width: 767px) {
+  /* HERO section */
+  #hero {
+    padding: 64px;
+  }
+
+  #hero .welcome {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+
+  #hero .welcome .title {
+    width: 100%;
+  }
+
+  #hero .welcome > div {
+    width: 60%;
+  }
+
+  /* HOW section */
+  #how .row {
+    gap: 18px;
+  }
+
+  #how .row:not(:last-child) {
+    margin-bottom: 36px;
+  }
+
+  #how .row .row-img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* HEADER  */
+  .header .navigation {
+    display: none;
+  }
+
+  .header .btn {
+    margin-left: auto;
+  }
+
+  /* HERO section */
+  #hero .welcome > div {
+    width: 80%;
+  }
+
+  /* HOW section */
+  #how .row {
+    flex-direction: column;
+  }
+
+  #how .row:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #how .row .row-img {
+    width: 80%;
+  }
+}
+
+/* -------------------------------------
+      PRICING section -> mobile first
+----------------------------------------*/
+
+#pricing {
+  padding: 64px;
+}
+
+#pricing .pricing-subtitle {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+#pricing .pricing-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 48px;
+}
+
+#pricing .plans .plan:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+#pricing .plans .plan {
+  padding: 16px;
+  border-radius: 6px;
+  background: #162044;
+}
+
+#pricing .plans .plan .title {
+  font-size: 18px;
+  font-weight: normal;
+  color: #7e8bb6;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #7e8bb6;
+  margin-bottom: 32px;
+}
+
+#pricing .plans .plan .title .price {
+  display: block;
+  font-size: 32px;
+  font-weight: bold;
+  color: #fff;
+}
+
+#pricing .plans .plan .title .price .dollar-sing {
+  color: #7e8bb6;
+}
+
+#pricing .plans .plan .features {
+  color: #7e8bb6;
+}
+
+#pricing .plans .plan .features .feat {
+  margin-bottom: 16px;
+}
+
+#pricing .plan .btn {
+  padding: 12px;
+}
+
+#pricing .plan .btn {
+  background: #4e5a85;
+  padding: 12px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 560px) {
+  #pricing .plans {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  #pricing .plans .plan:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #pricing .plans {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+  }
+
+  #pricing .plans .plan.promo {
+    margin-bottom: 36px;
+  }
 }
