@@ -46,12 +46,22 @@ body {
   font-style: italic;
   margin-bottom: 40px;
   font-size: 20px;
+  text-align: left;
 }
 
 .box .divider.vertical {
   height: 80px;
   width: 1px;
   background-color: var(--font-color);
+}
+
+.box .divider.horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  width: 80px;
+  background-color: var(--font-color);
+  margin-right: 32px;
 }
 
 /* -------------------------
@@ -98,6 +108,33 @@ body {
 }
 
 /* -------------------------
+        Photographer
+---------------------------- */
+
+#photographer {
+  padding: 0px;
+  display: block;
+}
+
+#photographer .article-img {
+  width: 100%;
+  height: auto;
+}
+
+/* -------------------------
+            Bridge
+---------------------------- */
+
+#bridge .content {
+  flex: 0 0 35%;
+}
+
+#bridge .article-img {
+  width: 60%;
+  margin: 64px;
+}
+
+/* -------------------------
             Gallery
 ---------------------------- */
 
@@ -130,8 +167,11 @@ body {
   margin: auto;
 }
 
-#contacts .content .title,
-.description {
+#contacts .content .title {
+  text-align: center;
+}
+
+#contacts .content .description {
   text-align: center;
 }
 
