@@ -21,7 +21,13 @@ The purpose of the course "HTML & CSS" is to provide basic knowledge of web tech
 
 ## Table of Contents:
 
-- Under construction!!!
+- [Introduction to HTML & CSS](https://github.com/tonytech83/HTML-CSS/tree/main/01_Introduction_to_HTML_%26_CSS)
+- [HTML Structure](https://github.com/tonytech83/HTML-CSS/tree/main/02_HTML_Structure)
+- [CSS & Typography](https://github.com/tonytech83/HTML-CSS/tree/main/03_CSS_%26_Typography)
+- [CSS Box Model](https://github.com/tonytech83/HTML-CSS/tree/main/04_CSS_Box_Model)
+- [Position & Grid](https://github.com/tonytech83/HTML-CSS/tree/main/05_Position_and_Grid)
+- [Flexbox](https://github.com/tonytech83/HTML-CSS/tree/main/06_Flexbox)
+- [Media Queries](https://github.com/tonytech83/HTML-CSS/tree/main/07_Media_Queries)
 
 <br/>
 <br/>
