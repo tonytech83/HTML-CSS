@@ -154,6 +154,57 @@ body {
   font-weight: normal;
 }
 
+/* --------------------------
+          Questions
+----------------------------- */
+
+#questions .q-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#questions .q-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--clr-gray);
+  padding: 0.5rem 1.25rem;
+}
+
+#questions .q-item .plus {
+  font-size: 1.5rem;
+  padding: 0px;
+}
+
+#questions .desc {
+  margin-bottom: 1rem;
+}
+
+#questions .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+#questions .form input {
+  width: 100%;
+  border: 1px solid var(--clr-gray);
+  border-radius: 4px;
+  padding: 0.75rem 1.25rem;
+}
+
+#questions .form .btn {
+  padding: 0.75rem 1.25rem;
+}
+
+/* ============================================================================
+                                    Media
+=============================================================================== */
+
 @media screen and (min-width: 640px) {
   /* ------------------------
             Global
@@ -181,6 +232,41 @@ body {
     width: 40%;
     border-radius: 0px;
   }
+
+  /* --------------------------
+          Questions
+----------------------------- */
+  #questions .q-list {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #questions .form {
+    flex-direction: row;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 0;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  #questions .form input {
+    width: 60%;
+    border-radius: 0px;
+  }
+
+  #questions .form .btn {
+    width: 40%;
+    border-radius: 0px;
+  }
+
+  #questions .desc {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -202,7 +288,7 @@ body {
     align-items: center;
   }
 
-  #download .content{
+  #download .content {
     order: 2;
   }
 
@@ -231,6 +317,33 @@ body {
   #hero .desc {
     font-size: 1.5rem;
   }
+
+  /* --------------------------
+          Questions
+  ----------------------------- */
+  #questions .title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  #questions .q-list {
+    max-width: 760px;
+    font-size: 1.5rem;
+  }
+
+  #questions .q-item .plus {
+    font-size: 1.75rem;
+  }
+
+  #questions .form {
+    max-width: 760px;
+  }
+
+  #questions .desc {
+    text-align: center;
+    padding: 1rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -241,7 +354,7 @@ body {
     font-size: 2.5rem;
     margin-bottom: 0.75rem;
   }
-  
+
   .content-section .desc {
     font-size: 1.5rem;
   }
