@@ -50,20 +50,21 @@ section {
   margin-bottom: 42px;
 }
 
-h1 {
-  font-family: Georgia, serif;
-  margin: 16px 16px 16px 0px;
-  font-size: 1.6em;
-}
+h1,
 h2,
 h3 {
   font-family: Georgia, serif;
   margin: 16px 16px 16px 0px;
 }
 
+h1 {
+  font-size: 1.6em;
+}
+
 img {
   background: rgb(255, 255, 255);
-  border: 2px solid rgba(0, 0, 0, 0.25);
+  border: 2px solid #000;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
   padding: 4px;
 }
 
@@ -86,6 +87,7 @@ aside {
 p {
   margin-bottom: 32px;
 }
+
 blockquote {
   font-family: Georgia, serif;
   width: 50%;
