@@ -1,7 +1,9 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
 
-ul {
-  list-style: none;
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
 }
 
 li {
@@ -14,18 +16,19 @@ a {
   width: 100px;
   height: 100px;
   padding: 15px;
-  border-radius: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   margin-right: 12px;
   font-size: 50px;
   color: black;
   text-align: center;
 }
 
-.fa-facebook-square:hover {
+.fa-facebook:hover {
   color: #4267b2;
 }
 
-.fa-twitter-square:hover {
+.fa-twitter:hover {
   color: #1DA1F2;
 }
 
