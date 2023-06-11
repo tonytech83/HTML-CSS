@@ -1,61 +1,63 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.2/css/all.min.css");
 
-.viewport.one{
+.viewport {
   position: relative;
   height: 50vh;
+  background-color: #eee;
+  overflow: hidden;
+}
+
+.viewport:nth-child(1) {
   background: linear-gradient(
     90deg,
     rgba(31, 111, 157, 1) 0%,
     rgba(44, 145, 159, 1) 35%,
     rgba(64, 197, 161, 1) 100%
   );
-  width: 100%;
 }
 
-.card {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 50vh;
-}
-
-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 6px;
-  object-fit: cover;
-  height: 80%;
-}
-
-.viewport.two {
-  display: block;
-  position: relative;
-  height: 50vh;
+.viewport:nth-child(2) {
   background: linear-gradient(
     90deg,
     rgba(170, 54, 114, 1) 0%,
     rgba(196, 104, 51, 1) 35%,
     rgba(206, 121, 30, 1) 100%
   );
+}
+
+.card {
+  display: block;
+  width: 40%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.viewport:nth-child(2) .card {
+  height: 80%;
+  width: 30%;
+}
+
+.card img {
+  display: block;
   width: 100%;
 }
 
-.icon_1 {
+.card .icon {
   position: absolute;
-  display: block;
-  bottom: 15%;
-  left: 68%;
-  color: white;
-  font-size: 32px;
+  inset: 0;
+  z-index: 10;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
 }
 
-
-.icon_2 {
-  position: absolute;
-  bottom: 15%;
-  left: 56%;
-  font-size: 32px;
-  color: white;
+.card .icon a {
+  color: #fff;
+  width: 32px;
 }
