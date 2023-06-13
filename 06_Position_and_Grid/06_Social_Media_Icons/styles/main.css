@@ -3,7 +3,12 @@
 body {
   min-height: 100vh;
   display: grid;
+  grid-template-columns: auto;
   place-items: center;
+}
+
+ul {
+  list-style: none;
 }
 
 li {
