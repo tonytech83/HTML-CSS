@@ -1,54 +1,26 @@
 body {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 100px auto;
-  grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
+  background-color: #eee;
+  padding: 5rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-header,
-aside,
-main,
-footer {
-  border-radius: 3px;
-  background: rgb(181, 216, 255);
-  padding: 5px 10px;
-}
-
-header {
-  grid-area: header;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-aside {
-  grid-area: aside;
-}
-
-main {
-  grid-area: main;
-}
-
-main a {
-  text-decoration: none;
+header, main, aside, footer {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.4rem;
   color: #000;
 }
 
-footer {
-  grid-area: footer;
+header, footer {
+  flex-basis: 100%;
 }
 
-aside ul {
-  list-style: none;
-  margin: 0;
-  padding: 5px;
+main {
+  flex: 8 1 40rem;
 }
 
-aside a {
-  display: block;
-  padding: 5px 0px;
-  color: rgb(86, 40, 129);
-  text-decoration: none;
+aside {
+  flex: 2 1 20rem;
 }
