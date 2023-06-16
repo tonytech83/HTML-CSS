@@ -25,9 +25,16 @@ body {
   justify-content: space-between;
 }
 
+.cards .card.middle {
+  transform: scale(1.05);
+}
+
 .cards .card:hover {
-  transform: scale(1.02);
-  animation: 3s infinite linear;
+  transform: scale(1.03);
+}
+
+.cards .card.middle:hover {
+  transform: scale(1.08);
 }
 
 .card .title {
